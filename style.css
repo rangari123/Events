@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  text-transform: capitalize;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eaedfa;
+  height: 100vh;
+}
+.container {
+  height: 96vh;
+  /* width: 1000px; */
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  width: fit-content;
+}
+.grid-container {
+  margin: 50px 50px 10px 50px;
+  display: grid;
+  /* place-items: center; */
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  background-color: aliceblue;
+  gap: 20px;
+  width: fit-content;
+}
+.four {
+  background-color: #554cac;
+  color: #fdffff;
+  padding: 20px;
+  text-align: left;
+  position: relative;
+  height: auto;
+}
+.four i {
+  color: #fdffff;
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  font-size: 1.2rem;
+  vertical-align: middle;
+}
+
+.light {
+  height: auto;
+  background-color: #eaedfa;
+  color: #34315e;
+  padding: 20px;
+  text-align: left;
+  position: relative;
+}
+.light i {
+  color: #36345d;
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  font-size: 1.2rem;
+  vertical-align: middle;
+}
+.month {
+  color: #fdffff;
+  font-size: 0.8rem;
+}
+.light .month {
+  color: #37335d;
+  font-size: 0.8rem;
+}
+
+.date {
+  width: 200px;
+  font-weight: bold;
+  margin: 5px auto;
+}
+.range {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.time {
+  font-size: 0.9rem;
+  margin-top: 20px;
+}
+.time11 {
+  margin-top: 45px;
+  color: #fdffff;
+}
+.time12 {
+  margin-top: 45px;
+  color: #34315e;
+  font-size: 0.9rem;
+}
+.time13 {
+  margin-top: 45px;
+  color: #34315e;
+  font-size: 0.9rem;
+}
+.light .time {
+  font-size: 0.9rem;
+  margin-top: 25px;
+  color: #34315e;
+}
+/*  */
+.load {
+  background-color: #37335d;
+  margin: 5px auto;
+  height: 100px;
+  width: 88%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.events {
+  text-transform: uppercase;
+  color: #fdffff;
+}
+.events:hover {
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+.online {
+  font-size: 0.8rem;
+}
+
+/* media */
+
+@media (max-width: 800px) {
+  body {
+    background-color: #ffffff;
+  }
+  .container {
+    height: 100vh;
+  }
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
